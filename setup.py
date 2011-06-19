@@ -10,8 +10,8 @@ config = {
     'author_email': 'darthlukan@gmail.com',
     'version': '0.1',
     'install_requires': ['nose'],
-    'packages': ['ex47'],       
-    'scripts': ['weapons'],
+    'packages': ['ex47', 'bin'],       
+    'scripts': [],
     'name': 'ex47game'
 }
 

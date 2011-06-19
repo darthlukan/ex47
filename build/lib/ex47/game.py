@@ -10,3 +10,12 @@ class Room(object):
 
     def add_paths(self, paths):
         self.paths.update(paths)
+        
+class Weapons(object):
+
+    def __init__(self, name):
+        self.name = name
+        self.weapon_list = {}
+        
+    def weapon_list(self, weapons):
+        self.weapons.update(weapons)
