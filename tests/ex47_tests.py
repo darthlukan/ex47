@@ -1,5 +1,6 @@
 from nose.tools import *
 from ex47.game import Room
+from ex47.game import Weapons
 
 
 def test_room():
@@ -30,4 +31,24 @@ def test_map():
     assert_equal(start.go('west'), west)
     assert_equal(start.go('west').go('east'), start)
     assert_equal(start.go('down').go('up'), start)
+    
+def test_weapons():
+    
+    # Weapon classes
+    bladed = "cuts"
+    blunt = "crushes"
+    defense = "protects"
+    magic = "special"
+    
+    weapon_list = ("backpack",
+        {"dagger": bladed, "sword": bladed, "axe": bladed, 
+         "mace": blunt, "shield": defense, "staff": magic})
+         
+    spell_list = ['fireball', 'lightning', 'magic missiles', 'cloak']
+    player_weapons = []
+        
+    # Assignments
+    assert_equal(weapon_list.name, 'backpack')        
+    
+        
 
